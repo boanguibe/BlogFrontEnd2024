@@ -76,11 +76,14 @@ body {
 .post {
   display: flex;
   justify-content: space-between;
-  /*  align-items: center;
-  margin: 5rem 0; */
   gap: 2rem;
 }
-
+.post__novedades {
+  font-family: var(--fuentePrincipal);
+  font-size: 3rem;
+  font-weight: var(--font-bold);
+  margin: 2rem 1rem;
+}
 
 /* Post Principal */
 .post__principal {
@@ -159,8 +162,8 @@ body {
   }
   .footer__logo {
     margin: 3rem;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 10%;
     border: 3px solid #67C770;
   }
@@ -178,11 +181,11 @@ body {
   }
   .footer__text--bold {
     font-family: var(--fuentePrincipal);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: var(--font-normal);
   }
   .footer__text--bold:hover {
     font-family: var(--fuentePrincipal);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: var(--font-bold);
   }
