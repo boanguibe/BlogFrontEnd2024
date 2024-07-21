@@ -25,6 +25,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; /* 1rem = 10px */
+    font-family: var(--fuentePrincipal);
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -48,6 +49,10 @@ body {
     margin: 0 auto;
   }
 
+  .linea-divisora {
+    border: 1px solid var(--borde-color);
+    margin: 3rem 0;
+  }
 
   /* Header */
   .header {
@@ -66,7 +71,6 @@ body {
     border: 3px solid var(--color-vue);
   }
   .header__title {
-    font-family: var(--fuentePrincipal);
     font-size: 3rem;
     font-weight: var(--font-bold);
   }
@@ -80,7 +84,6 @@ body {
 }
 .post__novedades,
 .post__populares {
-  font-family: var(--fuentePrincipal);
   font-size: 3rem;
   font-weight: var(--font-bold);
   margin: 2rem 1rem;
@@ -106,13 +109,11 @@ body {
 }
 
 .post__fecha {
-  font-family: var(--fuentePrincipal);
   font-size: 2rem;
   font-weight: var(--font-medium);
   margin: 0;
 }
 .post__titulo {
-  font-family: var(--fuentePrincipal);
   font-size: 2.5rem;
   font-weight: var(--font-bold);
   margin: 0;
@@ -126,7 +127,6 @@ body {
 }
 .post__texto {
   display: inline;
-  font-family: var(--fuentePrincipal);
   font-size: 2rem;
   font-weight: var(--font-medium);
   text-align: left;
@@ -159,13 +159,11 @@ body {
 }
 
 .asside__fecha {
-  font-family: var(--fuentePrincipal);
   font-size: 1.5rem;
   font-weight: var(--font-regular);
   margin: 0;
 }
 .asside__titulo {
-  font-family: var(--fuentePrincipal);
   font-size: 2rem;
   font-weight: var(--font-bold);
   margin: 0;
@@ -179,7 +177,6 @@ body {
 }
 .asside__texto {
   display: inline;
-  font-family: var(--fuentePrincipal);
   font-size: 1.5rem;
   font-weight: var(--font-medium);
   text-align: left;
@@ -219,23 +216,19 @@ body {
   }
   .footer__title {
     margin: auto 0;
-    font-family: var(--fuentePrincipal);
     font-size: 3rem;
     font-weight: var(--font-bold);
   }
 
   .footer__text {
-    font-family: var(--fuentePrincipal);
     font-size: 3rem;
     font-weight: var(--font-normal);
   }
   .footer__text--bold {
-    font-family: var(--fuentePrincipal);
     font-size: 2rem;
     font-weight: var(--font-normal);
   }
   .footer__text--bold:hover {
-    font-family: var(--fuentePrincipal);
     font-size: 2rem;
     font-weight: var(--font-bold);
   }
@@ -248,7 +241,7 @@ body {
   /* seccion-dos */
   .seccion-dos {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
    /*  grid-template-rows: 1fr 1fr; */
     grid-template-areas: 
     "popular categorias"
@@ -258,47 +251,64 @@ body {
   .seccion__populares {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 3rem;
   }
 
   /* Widget categorías */
-.widget-container {
-  position: relative;
-  float: right;
-  margin: 20px auto;
-  width: 400px;
+.seccion__categorias {
+  margin: 0 1rem;
 }
 
 .box {
-  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 1rem 3rem 0;
   width: 90%;
-  height: 65px;
-  border-radius: 5px;
+  height: 10rem;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
 }
 
 .box-img {
   height: 100%;
-  position: relative;
-  float: left;
-
 }
 
-.box-title {
-  font-size: 36px;
-  position: relative;
-  float: right;
-  margin-right: 30px;
+.box__title {
+  font-size: 3rem;
   color: #fff;
   font-weight: bold;
 }
 
-.html {
-  background-color: #E93E30;
+.box__html {
+  background-color: var(--color-html);
 }
 
-.css {
-  background-color: #299ED5;
+.box__css {
+  background-color: var(--color-css);
 }
 
-.js {
-  background-color: #F7E018;
+.box__js {
+  background-color: var(--color-js);
+}
+
+.box__react {
+  background-color: var(--color-react);
+}
+
+.box__vue {
+  background-color: var(--color-vue);
+}
+
+.box__bootstrap {
+  background-color: var(--color-bootstrap);
+}
+.box__titulo {
+  padding: 0;
+}
+
+.box__title-ver {
+  color: var(--texto-color);
+  font-size: 2rem;
+  font-weight: var(--font-medium);
 }
